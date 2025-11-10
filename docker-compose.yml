@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: codearena-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/codearena
+      - NODE_ENV=development
+    depends_on:
+      - mongodb
+      - sandbox
+    volumes:
+      - ./backend:/app
+    command: npm start
+
+  mongodb:
+    image: mongo:6.0
+    container_name: codearena-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  sandbox:
+    build: ./sandbox
+    container_name: codearena-sandbox
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./sandbox:/sandbox
+
+volumes:
+  mongo_data:
