@@ -17,8 +17,7 @@
 | Catégorie       | Technologies                                                                 |
 |-----------------|------------------------------------------------------------------------------|
 | **Backend**     | Node.js, Express                                                             |
-| **Frontend**    | React (ou Vue.js)                                                            |
-| **Base de données** | MongoDB                                                                  |
+| **Frontend**    | React (ou Vue.js)                                                            | 
 | **Temps réel**  | Socket.io                                                                    |
 | **Sécurité**    | Docker (sandboxing), JWT (authentification)                                  |
 | **Tests**       | Jest/Mocha (60%+ de couverture)                                              |
