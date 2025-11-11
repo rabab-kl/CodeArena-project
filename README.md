@@ -118,8 +118,8 @@
     <ol>
       <li>
         Cloner le dépôt :
-        <pre style="background-color: #0d0d1a; padding: 10px; border-radius: 5px; border: 1px solid #00FFCC;"><code style="color: #00FFCC;">git clone https://github.com/votre-utilisateur/CodeArena.git
-cd CodeArena</code></pre>
+        <pre style="background-color: #0d0d1a; padding: 10px; border-radius: 5px; border: 1px solid #00FFCC;"><code style="color: #00FFCC;">git clone https://github.com/rabab-kl/CodeArena-project.git
+cd CodeArena-project</code></pre>
         <img src="https://media.giphy.com/media/l41lM2Q9QQYvuKjLI/giphy.gif" width="150" alt="Clone Animation"/>
       </li>
     </ol>
